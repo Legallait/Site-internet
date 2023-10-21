@@ -1,6 +1,37 @@
+.site-links {
+  display: flex;
+  justify-content: space-around;
+  background-color: #f7f7f7;
+  padding: 20px;
+}
+
+.link {
+  text-align: center;
+  width: 30%;
+  padding: 10px;
+}
+
+.link img {
+  width: 100px;
+  height: 100px;
+  display: block;
+  margin: 0 auto 10px;
+}
+
+.link a {
+  text-decoration: none;
+  color: #4b4c4d;
+  font-weight: bold;
+}
+
+.link p {
+  font-size: 14px;
+}
+
+
 .footer-clean {
   padding:50px 0;
-  background-color:#fff;
+  background-color:#ccc;
   color:#4b4c4d;
 }
 
