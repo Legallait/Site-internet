@@ -1,12 +1,10 @@
-function MouseOverSurbrillant(commune){
-    jQuery(document).ready(function($){
 
-    });
-}
-function original(commune) {
-    jQuery(document).ready(function ($) {
-        jQuery("a." + commune).attr('src', "/images/carte.jpg");
+var buttons = document.querySelectorAll("button");
+var carte = document.getElementById("carte");
 
-        jQuery("a." + commune).removeClass("Selected");
+buttons.forEach(function(button) {
+    button.addEventListener("mouseover", function() {
+        carte.src = "../image/departements/"+button.className;
     });
-}
+});
+
