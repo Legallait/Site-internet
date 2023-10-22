@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Page Actualité</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" type="text/css" href="../CSS/style_actualite.css">
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js" defer></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js" defer></script>
+        <script src="../app.js" defer ></script>
+    </head>
+<body>
+<!------------------DEBUT DU la barre de Navigation -------------------->
+    <header>
+        <a href="#" class="logo">CASBT</a>
+        <div class="group">
+            <ul class="navigation">
+                <li><a href="Accueil.html">Accueil</a></li>
+                <li><a href="Actualite.html">Actualité</a></li>
+                <li><a href="Communes.html">FAQ</a></li>
+            </ul>
+        </div> 
+        <div class="search">
+            <span class="icon">
+                <ion-icon name="search-outline" class="searchbtn"></ion-icon>
+                <ion-icon name="close-outline" class="closebtn"></ion-icon>
+            </span>
+        </div>
+        <div class="searchBox">
+            <input type="text" placeholder="search here...">
+        </div>
+    </header>
+<section>
+       <div class="slider">
+            <img src="../image/departements/Ex1.jpg" alt="img1" class="img_slider active"/>
+            <img src="../image/departements/Ex2.jpg" alt="img2" class="img_slider"/>
+            <img src="../image/departements/Ex3.jpg" alt="img3" class="img_slider"/>
+            <div class="suivant">
+                <i class="fa-solid fa-circle-chevron-right"></i>
+            </div>
+             <div class="precedent">
+            <i class="fa-solid fa-circle-chevron-left"></i>
+        </div>
+        </div>
+</section>
+<!------------------FIN DU la barre de Navigation -------------------->
+
+<!--- ---------------DEBUT Des Actualités ----------------- --->
+
+    <section id="actu">
+        <h1 class ="titre_actu">Nos Actualité</h1>
+        <div class="images">
+            <ul>
+                <li class="car">
+                    <div>
+                        <a href="#" ><img src="../image/departements/Ex1.jpg" alt="actu1" /></a>
+                    </div>
+                    
+                    <a href="#">Lorem ipsum dolor sit amet</a>
+                </li>
+                <li class="car">
+                    <div>
+                        <a href="#" ><img src="../image/departements/Ex2.jpg" alt="actu2" /></a>
+                    </div>
+                    
+                    <a href="#">Lorem ipsum dolor sit amet</a>
+                </li>
+                <li class="car">
+                    <div>
+                        <a href="#" ><img src="../image/departements/Ex3.jpg" alt="actu3" /></a>
+                        <a href="#">Lorem ipsum dolor sit amet</a>
+                    </div>
+                    
+                </li>
+                <li class="car">
+                    <div>
+                        <a href="#" ><img src="../image/departements/Ex4.jpg" alt="actu4" /></a>
+                        <a href="#">Lorem ipsum dolor sit amet</a>
+                    </div>
+                    
+                </li>
+            </ul>
+        </div>
+    </section>
+<!--- ---------------FIN DU la barre de Navigation ----------------- --->
+
+<!--- ---------------DEBUT DU FOOTER ----------------- --->
+
+    <div class="footer-clean">
+        <footer>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-sm-4 col-md-3 item">
+                        <h3>Horaires</h3>
+                        <ul>
+                            <li>Ouverture :</li>
+                            <li>Lundi au Vendredi</li>
+                            <li>7h30/14h30 </br>et de 14h30/17h</a></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4 col-md-3 item">
+                        <h3>Nous contacter</h3>
+                        <ul>
+                            <li>Téléphone : </br><a href="05 90 99 63 20">05 90 99 63 20</a></li>
+                            <li>Fax : 05 90 99 63 21</li>
+                            <li><a href="mailto:"> Contactez-moi </a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4 col-md-3 item">
+                        <h3>Lorem</h3>
+                        <ul>
+                            <li>Lorem</li>
+                            <li>Ipsum</li>
+                            <li>,dolor</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 item social"><a href="https://facebook.com/" target="_blank"><i class="icon ion-social-facebook"></i></a><a href="https://twitter.com/" target="_blank"><i class="icon ion-social-twitter"></i></a><a href="https://snapchat.com/" target="_blank"><i class="icon ion-social-snapchat"></i></a><a href="https://instagram.com/" target="_blank"><i class="icon ion-social-instagram"></i></a>
+                        <p class="copyright">CASBT © 2023</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+<!--- ---------------FIN Du FOOTER ----------------- --->
+    <script>
+        let searchbtn = document.querySelector('.searchbtn');
+        let closebtn = document.querySelector('.closebtn');
+        let searchBox = document.querySelector('.searchBox');
+
+        searchbtn.onclick = function(){
+            searchBox.classList.add('active');
+            closebtn.classList.add('active');
+            searchbtn.classList.add('active');
+        }
+
+        closebtn.onclick = function(){
+            searchBox.classList.remove('active');
+            closebtn.classList.remove('active');
+            searchbtn.classList.remove('active');
+        }
+    </script>
+
+</body>
+</html>
+
+
+
