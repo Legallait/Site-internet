@@ -16,28 +16,28 @@ rubrique2.style.display = "none";
 rubrique3.style.display = "none";
 rubrique4.style.display = "none";
 
-btn1.addEventListener("click", function() {
+btn1.addEventListener("click", function () {
     rubrique1.style.display = "block";
     rubrique2.style.display = "none";
     rubrique3.style.display = "none";
     rubrique4.style.display = "none";
 });
 
-btn2.addEventListener("click", function() {
+btn2.addEventListener("click", function () {
     rubrique1.style.display = "none";
     rubrique2.style.display = "block";
     rubrique3.style.display = "none";
     rubrique4.style.display = "none";
 });
 
-btn3.addEventListener("click", function() {
+btn3.addEventListener("click", function () {
     rubrique1.style.display = "none";
     rubrique2.style.display = "none";
     rubrique3.style.display = "block";
     rubrique4.style.display = "none";
 });
 
-btn4.addEventListener("click", function() {
+btn4.addEventListener("click", function () {
     rubrique1.style.display = "none";
     rubrique2.style.display = "none";
     rubrique3.style.display = "none";
@@ -46,7 +46,7 @@ btn4.addEventListener("click", function() {
 
 var toutesLesReponses = []
 
-function cacher(){
+function cacher() {
     for (let k = 0; k < toutesLesReponses.length; k++) {
         console.log(toutesLesReponses[k])
         toutesLesReponses[k].style.display = "none";
@@ -58,17 +58,16 @@ for (let i = 1; i <= NB_RUBRIQUE; i++) {
         console.log("q-" + i + "-" + j)
         let question = document.getElementsByClassName("q-" + i + "-" + j);
         let reponse = document.getElementsByClassName("r-" + i + "-" + j);
-        try{
+        try {
             reponse[0].style.display = "none";
             question[0].style.cursor = "pointer";
             question[0].style.fontWeight = "bolder";
-            question[0].addEventListener("click", function() {
+            question[0].addEventListener("click", function () {
                 cacher()
                 reponse[0].style.display = "block";
             });
             toutesLesReponses.push(reponse[0]);
-        }
-        catch(e){
+        } catch (e) {
             console.log("");
         }
     }

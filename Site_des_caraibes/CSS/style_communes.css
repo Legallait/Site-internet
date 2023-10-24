@@ -3,7 +3,6 @@
 
 
 a {
-
     text-decoration: none;
     color: currentColor;
 }
@@ -24,8 +23,10 @@ h1 {
     text-transform: capitalize;
 }
 
+
 #container {
     display: flex;
+    flex: 1;
     flex-direction: row;
     justify-content: left;
     align-items: center;
