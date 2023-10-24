@@ -49,8 +49,8 @@ header .container-fluid {
 
 header .navb-logo img {
 
-    width: 140px;
-    height: 66px;
+    width: 100px;
+    height: 100px;
 }
 
 header .navb-items {
@@ -86,7 +86,7 @@ header .item:hover {
     border-top: 3px solid #64d6f4;
 }
 
-/*
+
 header .item-button a {
 
     background-color: #274d8a;
@@ -106,7 +106,7 @@ header .item-button a:hover {
     background-color: #64d6f4;
 }
 
- */
+
 
 header .mobile-toggler {
 

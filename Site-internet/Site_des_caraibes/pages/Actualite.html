@@ -5,19 +5,22 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Page Actualité</title>
         
-        <link rel="stylesheet"
-              href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
               integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
               crossorigin="anonymous" referrerpolicy="no-referrer"/>
         <link rel="stylesheet" href="/fontawesome/css/all.css">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
         <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js" defer></script>
         <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js" defer></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" defer></script>
+        
+        
+        <link rel="stylesheet"
+              href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"
                 defer></script>
+        
         <script src="../javascript/accueil.js" defer></script>
         
         
@@ -54,49 +57,56 @@
                         </div>
                     </div>
                     
+                    <!--ENLEVER
                     
-                    <div class="mobile-toggler d-lg-none">
-                        <a href="#" data-bs-toggle="modal" data-bs-target="#navbModal">
-                            <i class="fa-solid fa-bars"></i>
-                        </a>
-                    </div>
-                    
-                    
-                    <div class="modal fade" id="navbModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                         aria-hidden="true">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                
-                                <div class="modal-header">
-                                    <img src="/img/logo-variant.png" alt="Logo">
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
-                                        <i
-                                                class="fa-solid fa-xmark"></i></button>
-                                </div>
-                                
-                                <div class="modal-body">
+                    <div id="chiant">
+                        <div class="mobile-toggler d-lg-none">
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#navbModal">
+                                <i class="fa-solid fa-bars"></i>
+                            </a>
+                        </div>
+                        
+                        
+                        <div class="modal fade" id="navbModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                             aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
                                     
-                                    <div class="modal-line">
-                                        <i class="fa-solid fa-house"></i><a href="../pages/Accueil.html">Accueil</a>
+                                    <div class="modal-header">
+                                        <img src="/img/logo-variant.png" alt="Logo">
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close">
+                                            <i class="fa-solid fa-xmark"></i></button>
                                     </div>
                                     
-                                    <div class="modal-line">
-                                        <i class="fa-solid fa-bell-concierge"></i><a href="../pages/Actualite.html">Actualité</a>
-                                    </div>
-                                    
-                                    <div class="modal-line">
-                                        <i class="fa-solid fa-file-lines"></i> <a
-                                            href="../pages/Communes.html">Communes</a>
-                                    </div>
-                                    
-                                    <div class="modal-line">
-                                        <i class="fa-solid fa-circle-info"></i><a
-                                            href="../pages/Information_pratique.html">Information_pratique</a>
+                                    <div class="modal-body">
+                                        
+                                        <div class="modal-line">
+                                            <i class="fa-solid fa-house"></i><a href="../pages/Accueil.html">Accueil</a>
+                                        </div>
+                                        
+                                        <div class="modal-line">
+                                            <i class="fa-solid fa-bell-concierge"></i><a href="../pages/Actualite.html">Actualité</a>
+                                        </div>
+                                        
+                                        <div class="modal-line">
+                                            <i class="fa-solid fa-file-lines"></i> <a
+                                                href="../pages/Communes.html">Communes</a>
+                                        </div>
+                                        
+                                        <div class="modal-line">
+                                            <i class="fa-solid fa-circle-info"></i><a
+                                                href="../pages/Information_pratique.html">Information_pratique</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    
+                    ENLEVER-->
+                
+                
                 </div>
             
             </header>
@@ -164,14 +174,14 @@
                             <ul>
                                 <li>Ouverture :</li>
                                 <li>Lundi au Vendredi</li>
-                                <li>7h30/14h30 </br>et de 14h30/17h</a></li>
+                                <li>7h30/14h30 et de 14h30/17h</li>
                                 <li></li>
                             </ul>
                         </div>
                         <div class="col-sm-4 col-md-3 item">
                             <h3>Nous contacter</h3>
                             <ul>
-                                <li>Téléphone : </br><a href="05 90 99 63 20">05 90 99 63 20</a></li>
+                                <li>Téléphone : <a href="05 90 99 63 20">05 90 99 63 20</a></li>
                                 <li>Fax : 05 90 99 63 21</li>
                                 <li><a href="mailto:"> Contactez-moi </a></li>
                             </ul>
