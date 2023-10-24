@@ -3,35 +3,31 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Communes membres</title>
+        <title>Page Actualité</title>
         
         <!--BOOTSTRAP-->
         <link rel="stylesheet"
               href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
-        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"
+                defer></script>
         
         <!--ICONS/FONT-->
         <link rel="stylesheet" href="/fontawesome/css/all.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare./ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js" defer></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js" defer></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
               integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
               crossorigin="anonymous" referrerpolicy="no-referrer"/>
-        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js" defer></script>
-        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js" defer></script>
         
         <!--SCRIPT-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" defer></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"
-                defer></script>
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
+        <script src="../javascript/accueil.js" defer></script>
         
-        <script src="../javascript/communes.js" defer></script>
         
         <!--CSS-->
         <link rel="stylesheet" type="text/css" href="../CSS/commonStyle.css">
-        <link rel="stylesheet" type="text/css" href="../CSS/style_communes.css">
-    
+        <link rel="stylesheet" type="text/css" href="../CSS/style_actualite.css">
     
     </head>
     <body>
@@ -64,7 +60,6 @@
                         </div>
                     </div>
                     
-                    
                     <!--Navbar qui marche pas-->
                     
                     <div class="mobile-toggler d-lg-none">
@@ -80,7 +75,7 @@
                             <div class="modal-content">
                                 
                                 <div class="modal-header">
-                                    <img src="/img/logo-variant.png" alt="Logo">
+                                    <img src="../image/Actualite/logocasbt.jpg" alt="Logo">
                                     <button type="button" class="btn-close" data-bs-dismiss="modal"
                                             aria-label="Close">
                                         <i class="fa-solid fa-xmark"></i></button>
@@ -93,11 +88,11 @@
                                     </div>
                                     
                                     <div class="modal-line">
-                                        <i class="fa-solid fa-bell-concierge"></i><a href="../pages/Actualite.html">Actualité</a>
+                                        <i class="fa-solid fa-file-lines"></i><a href="../pages/Actualite.html">Actualité</a>
                                     </div>
                                     
                                     <div class="modal-line">
-                                        <i class="fa-solid fa-file-lines"></i> <a
+                                        <i class="fa-regular fa-map"></i><a
                                             href="../pages/Communes.html">Communes</a>
                                     </div>
                                     
@@ -119,29 +114,56 @@
             </header>
             <!------------------FIN DU la barre de Navigation -------------------->
             
-            
-            <div id="map">
-                <h1> CARTE </h1>
-                <div id="container">
-                    <div class="commune">
-                        <button class="Baillif.jpg">Baillif</button>
-                        <button class="Basse-Terre.jpg">Basse-terre</button>
-                        <button class="Bouillante.jpg">Bouillante</button>
-                        <button class="Capissierre.jpg"> Capesterre-Belle-Eau</button>
-                        <button class="Courbeyre.jpg">Gourbeyre</button>
-                        <button class="Saint-Claude.jpg">Saint-Claude</button>
-                        <button class="Terre-De-Bas.jpg">Terre-De-Bas</button>
-                        <button class="Terre-De-Haut.jpg">Terre-De-Haut</button>
-                        <button class="Trois-Rivières.jpg">Trois-Rivières</button>
-                        <button class="Vieux-Fort.jpg">Vieux-Fort</button>
-                        <button class="Vieux-Habitants.jpg">Vieux-Habitants</button>
+            <!--- ---------------DEBUT Des Actualités ----------------- --->
+            <section>
+                <div class="slider">
+                    <img src="../image/Actualite/Ex1.jpg" alt="img1" class="img_slider active"/>
+                    <img src="../image/Actualite/Ex2.jpg" alt="img2" class="img_slider"/>
+                    <img src="../image/Actualite/Ex3.jpg" alt="img3" class="img_slider"/>
+                    <div class="suivant">
+                        <i class="fa-solid fa-circle-chevron-right"></i>
                     </div>
-                    <div class="carte">
-                        <img id="carte" src="../image/departements/vierge.png">
+                    <div class="precedent">
+                        <i class="fa-solid fa-circle-chevron-left"></i>
                     </div>
                 </div>
-            </div>
-        
+            </section>
+            <section id="actu">
+                <h1 class="titre_actu">Nos Actualité</h1>
+                <div class="images">
+                    <ul>
+                        <li class="car">
+                            <div>
+                                <a href="#"><img src="../image/Actualite/Ex1.jpg" alt="actu1"/></a>
+                            </div>
+                            
+                            <a href="#">Lorem ipsum dolor sit amet</a>
+                        </li>
+                        <li class="car">
+                            <div>
+                                <a href="#"><img src="../image/Actualite/Ex2.jpg" alt="actu2"/></a>
+                            </div>
+                            
+                            <a href="#">Lorem ipsum dolor sit amet</a>
+                        </li>
+                        <li class="car">
+                            <div>
+                                <a href="#"><img src="../image/Actualite/Ex3.jpg" alt="actu3"/></a>
+                                <a href="#">Lorem ipsum dolor sit amet</a>
+                            </div>
+                        
+                        </li>
+                        <li class="car">
+                            <div>
+                                <a href="#"><img src="../image/Actualite/Ex4.jpg" alt="actu4"/></a>
+                                <a href="#">Lorem ipsum dolor sit amet</a>
+                            </div>
+                        
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <!--- ---------------FIN Des Actualite ----------------- --->
         </div>
         <!--- ---------------DEBUT DU FOOTER ----------------- --->
         
@@ -187,6 +209,9 @@
             </footer>
         </div>
         <!--- ---------------FIN Du FOOTER ----------------- --->
+       
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js
+    "></script>
     
     </body>
 </html>
