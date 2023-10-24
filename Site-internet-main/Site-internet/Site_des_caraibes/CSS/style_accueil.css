@@ -1,0 +1,42 @@
+/* Fichier: style_accueil.css */
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@300;400;500;600;700&display=swap');
+
+a {
+    text-decoration: none;
+    color: currentColor;
+}
+
+a:hover {
+    color: currentColor;
+}
+
+
+.site-links {
+    display: flex;
+    justify-content: space-around;
+    background-color: #f7f7f7;
+    padding: 20px;
+}
+
+.link {
+    text-align: center;
+    width: 30%;
+    padding: 10px;
+}
+
+.link img {
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+.link a {
+    text-decoration: none;
+    color: #4b4c4d;
+    font-weight: bold;
+}
+
+.link p {
+    font-size: 14px;
+}
