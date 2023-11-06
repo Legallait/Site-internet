@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Page Actualité</title>
+        
+        <!--BOOTSTRAP-->
+        <link rel="stylesheet"
+              href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"
+                defer></script>
+        
+        <!--ICONS/FONT-->
+        <link rel="stylesheet" href="/fontawesome/css/all.css">
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js" defer></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js" defer></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+              integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+              crossorigin="anonymous" referrerpolicy="no-referrer"/>
+        
+        <!--SCRIPT-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" defer></script>
+        <script src="../javascript/accueil.js" defer></script>
+        
+        
+        <!--CSS-->
+        <link rel="stylesheet" type="text/css" href="../CSS/commonStyle.css">
+        <link rel="stylesheet" type="text/css" href="../CSS/style_actualite.css">
+    
+    </head>
+    <body>
+        
+        <div id="allContent">
+            <!------------------DEBUT DU la barre de Navigation -------------------->
+            <header>
+                <div class="container-fluid">
+                    
+                    <div class="navb-logo">
+                        <a href="Accueil.html"><img src="../image/Actualite/logocasbt.jpg" alt="Logo"></a>
+                    </div>
+                    
+                    <div class="navb-items d-none d-xl-flex">
+                        
+                        <div class="item">
+                            <a href="Accueil.html">Accueil</a>
+                        </div>
+                        
+                        <div class="item">
+                            <a href="../pages/Actualite.html">Actualite</a>
+                        </div>
+                        
+                        <div class="item">
+                            <a href="Communes.html">Commune</a>
+                        </div>
+                        
+                        <div class="item">
+                            <a href="Information_pratique.html">Info pratique</a>
+                        </div>
+                    </div>
+                    
+                    <!--Navbar qui marche pas-->
+                    
+                    <div class="mobile-toggler d-lg-none">
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#navbModal">
+                            <i class="fa-solid fa-bars"></i>
+                        </a>
+                    </div>
+                    
+                    
+                    <div class="modal fade" id="navbModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                         aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                
+                                <div class="modal-header">
+                                    <img src="../image/Actualite/logocasbt.jpg" alt="Logo">
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close">
+                                        <i class="fa-solid fa-xmark"></i></button>
+                                </div>
+                                
+                                <div class="modal-body">
+                                    
+                                    <div class="modal-line">
+                                        <i class="fa-solid fa-house"></i><a href="Accueil.html">Accueil</a>
+                                    </div>
+                                    
+                                    <div class="modal-line">
+                                        <i class="fa-solid fa-file-lines"></i><a href="../pages/Actualite.html">Actualité</a>
+                                    </div>
+                                    
+                                    <div class="modal-line">
+                                        <i class="fa-regular fa-map"></i><a
+                                            href="Communes.html">Communes</a>
+                                    </div>
+                                    
+                                    <div class="modal-line">
+                                        <i class="fa-solid fa-circle-info"></i><a
+                                            href="Information_pratique.html">Information_pratique</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                    <!--Fin navbar qui marche pas-->
+                
+                
+                </div>
+            
+            </header>
+            <!------------------FIN DU la barre de Navigation -------------------->
+            
+            <!--- ---------------DEBUT Des Actualités ----------------- --->
+            <section>
+                <div class="slider">
+                    <img src="../image/Actualite/port.jpg" alt="img1" class="img_slider active"/>
+                    <img src="../image/Actualite/centre-ville.jpg" alt="img2" class="img_slider"/>
+                    <img src="../image/Actualite/road.jpg" alt="img3" class="img_slider"/>
+                    <div class="suivant">
+                        <i class="fa-solid fa-circle-chevron-right"></i>
+                    </div>
+                    <div class="precedent">
+                        <i class="fa-solid fa-circle-chevron-left"></i>
+                    </div>
+                </div>
+            </section>
+            <section id="actualite">
+                <h1 class="titre_actu">Nos Actualité</h1>
+                <div class="images">
+                    <ul>
+                        <li class="actualite">
+                           <div>
+                               <img src="../image/Actualite/Ex1.jpg" alt="">
+                           </div>
+                           <span>Fortes pluies et orages : la Guadeloupe, Saint-Martin et Saint-Barthélemy en vigilance jaune</span>
+                           
+                           <a href="https://la1ere.francetvinfo.fr/guadeloupe/fortes-pluies-et-orages-la-guadeloupe-saint-martin-et-saint-barthelemy-en-vigilance-jaune-1438493.html">En Savoir plus</a>
+                        </li>
+                        <li class="actualite">
+                            <div>
+                                <img src="../image/Actualite/Ex2.jpg" alt="">
+                            </div>
+                            <span>Yatoola: une application pour faciliter les démarches administratives des jeunes guadeloupéens</span>
+                            
+                            <a href="https://www.guadeloupe.franceantilles.fr/actualite/societe/jenes-an-nou/une-application-pour-faciliter-les-demarches-administratives-959267.php">En Savoir plus</a>
+                         </li>
+                         <li class="actualite">
+                            <div>
+                                <img src="../image/Actualite/Ex3.jpg" alt="">
+                            </div>
+                            <span>L’ANSM alerte contre les médicaments anti-rhume</span>
+                            
+                            <a href="https://rci.fm/deuxiles/node/4778723">En Savoir plus</a>
+                         </li>
+                         <li class="actualite">
+                            <div>
+                                <img src="../image/Actualite/Ex4.jpg" alt="">
+                            </div>
+                            <span>La Guadeloupe a brillé lors de l'événement « Innovation Outre-Mer »</span>
+                            
+                            <a href="https://rci.fm/guadeloupe/infos/Economie/La-Guadeloupe-brille-lors-de-levenement-Innovation-Outre-Mer">En Savoir plus</a>
+                         </li>
+                         <li class="actualite">
+                            <div>
+                                <img src="../image/Actualite/port.jpg" alt="">
+                            </div>
+                            <span>"Le Port de la Guadeloupe en Pleine Expansion : Nouveaux Projets et Croissance Économique"</span>
+                            
+                            <a href="#">En Savoir plus</a>
+                         </li>
+                         <li class="actualite">
+                            <div>
+                                <img src="../image/Actualite/road.jpg" alt="">
+                            </div>
+                            <span>"Inauguration de la Nouvelle route : Un Tronçon Clé pour Améliorer la Mobilité en Guadeloupe"</span>
+                            
+                            <a href="#">En Savoir plus</a>
+                         </li>
+                    </ul>
+                </div>
+            </section>
+            
+            <!--- ---------------FIN Des Actualite ----------------- --->
+        </div>
+        <!--- ---------------DEBUT DU FOOTER ----------------- --->
+        
+        <div class="footer-clean">
+            <footer>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-sm-4 col-md-3 item">
+                            <h3>Horaires</h3>
+                            <ul>
+                                <li>Ouverture :</li>
+                                <li>Lundi au Vendredi</li>
+                                <li>7h30/14h30 et de 14h30/17h</li>
+                                <li></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-4 col-md-3 item">
+                            <h3>Nous contacter</h3>
+                            <ul>
+                                <li>Téléphone : <a href="05 90 99 63 20">05 90 99 63 20</a></li>
+                                <li>Fax : 05 90 99 63 21</li>
+                                <li><a href="mailto:"> Contactez-moi </a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-3 item social"><a href="https://facebook.com/" target="_blank"><i
+                                class="icon ion-social-facebook"></i></a><a href="https://twitter.com/" target="_blank"><i
+                                class="icon ion-social-twitter"></i></a><a href="https://snapchat.com/" target="_blank"><i
+                                class="icon ion-social-snapchat"></i></a><a href="https://instagram.com/"
+                                                                            target="_blank"><i
+                                class="icon ion-social-instagram"></i></a>
+                            <p class="copyright">CASBT © 2023</p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <!--- ---------------FIN Du FOOTER ----------------- --->
+       
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js
+    "></script>
+    
+    </body>
+</html>
+
+
+
